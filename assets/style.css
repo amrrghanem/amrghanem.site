@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -10,9 +10,9 @@ body {
 
 /* Main Header */
 .main-header {
-    background-color: #0053a0;
+    background: linear-gradient(135deg, #0053a0 0%, #003d7a 100%);
     color: white;
-    padding: 30px 0;
+    padding: 40px 0;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -24,42 +24,45 @@ body {
 }
 
 .profile-image {
-    border-radius: 50%;      /* Makes the image circular */
-    width: 150px;            /* Set the width of the image */
-    height: 150px;           /* Set the height of the image */
-    object-fit: cover;       /* Ensures the image scales correctly within the circle */
-    margin-bottom: 15px;     /* Adds some space below the image */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 /* Navbar */
 .navbar ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 20px 0;
 }
 
 .navbar ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    text-decoration: underline;
+    background-color: #003d7a;
 }
 
 /* Content Container */
 .content-container {
     width: 80%;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 40px auto;
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -68,6 +71,7 @@ h2 {
     color: #0053a0;
     border-bottom: 2px solid #0053a0;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -75,13 +79,26 @@ ul {
     margin-left: 20px;
 }
 
+/* Project Cards */
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CV Download Button */
 .cv-download a {
     display: inline-block;
     background-color: #0053a0;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .cv-download a:hover {
@@ -98,9 +115,29 @@ footer {
 
 footer a {
     color: #a8e0ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
     color: #e0f7ff;
 }
 
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .content-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
