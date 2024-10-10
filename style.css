@@ -8,12 +8,13 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Main Header */
 .main-header {
     background-color: #0053a0;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .main-header .header-content {
@@ -22,45 +23,53 @@ body {
     align-items: center;
 }
 
-.main-header .profile-image {
+.profile-image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    margin-bottom: 15px;
 }
 
-nav ul {
+/* Navbar */
+.navbar ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.navbar ul li {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+.navbar ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     text-decoration: underline;
 }
 
-/* Sections */
-section {
-    padding: 20px;
-    margin: 20px;
+/* Content Container */
+.content-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #0053a0;
+    border-bottom: 2px solid #0053a0;
+    padding-bottom: 10px;
 }
 
-.projects ul, .research-interests ul {
+ul {
     list-style-type: disc;
     margin-left: 20px;
 }
@@ -69,7 +78,7 @@ h2 {
     display: inline-block;
     background-color: #0053a0;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -82,7 +91,7 @@ h2 {
 footer {
     background-color: #003d7a;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
