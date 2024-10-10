@@ -24,10 +24,11 @@ body {
 }
 
 .profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 15px;
+    border-radius: 50%;      /* Makes the image circular */
+    width: 150px;            /* Set the width of the image */
+    height: 150px;           /* Set the height of the image */
+    object-fit: cover;       /* Ensures the image scales correctly within the circle */
+    margin-bottom: 15px;     /* Adds some space below the image */
 }
 
 /* Navbar */
