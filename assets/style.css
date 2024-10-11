@@ -38,7 +38,7 @@ header h2 {
 .buttons a {
     background-color: #ff7f50;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 0 10px;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -72,6 +72,11 @@ header h2 {
     margin-left: 30px;
 }
 
+.profile-details p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
 /* Projects Section */
 .projects-preview {
     padding: 60px 0;
@@ -85,11 +90,12 @@ header h2 {
 
 .project-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
 }
 
 .project {
-    width: 40%;
+    width: 300px;
     text-align: center;
 }
 
@@ -115,6 +121,7 @@ footer .social-links a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+    font-size: 1.1rem;
 }
 
 footer .social-links a:hover {
