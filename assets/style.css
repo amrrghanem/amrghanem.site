@@ -6,85 +6,98 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
     line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #1a2a6c;
-    padding: 50px 0;
+    background-color: #4e5d6c;
+    padding: 30px 0;
+    text-align: center;
     color: white;
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
 }
 
-header p {
+header h2 {
     font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.profile-section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-details {
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.profile-details p {
+    margin-bottom: 15px;
+}
+
+.extra-info {
+    background-color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.interests, .education {
+    max-width: 300px;
+}
+
+.interests h3, .education h3 {
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-.buttons {
-    margin-top: 20px;
+.interests ul, .education ul {
+    list-style: none;
 }
 
-.buttons a {
-    background-color: #ff7f50;
-    padding: 15px 30px;
-    margin: 10px;
+.interests li, .education li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #4e5d6c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin: 0 10px;
 }
 
-.buttons a:hover {
-    background-color: #ff5722;
-}
-
-.projects-preview {
-    padding: 60px 0;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.projects-preview h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-.project-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.project {
-    width: 45%;
-    text-align: center;
-}
-
-.project img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.project img:hover {
-    transform: scale(1.05);
-}
-
-.project h3 {
-    margin-top: 20px;
-    font-size: 1.5rem;
+footer .social-links a:hover {
+    text-decoration: underline;
 }
