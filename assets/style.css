@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
 header {
     background-color: #1a2a6c;
     padding: 50px 0;
-    color: #fff;
+    color: white;
 }
 
 header h1 {
@@ -29,92 +30,61 @@ header h1 {
 
 header p {
     font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 .buttons a {
     background-color: #ff7f50;
-    padding: 10px 20px;
+    padding: 15px 30px;
     margin: 10px;
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .buttons a:hover {
     background-color: #ff5722;
 }
 
-section.projects-preview {
-    margin: 50px 0;
+.projects-preview {
+    padding: 60px 0;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
-section.projects-preview h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.projects-preview h2 {
     font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .project-list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .project {
     width: 45%;
+    text-align: center;
 }
 
 .project img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
 }
 
 .project h3 {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.5rem;
-    text-align: center;
-}
-
-.contact-form {
-    width: 60%;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    padding: 10px;
-    background-color: #1a2a6c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #ff7f50;
 }
