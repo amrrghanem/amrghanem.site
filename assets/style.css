@@ -1,4 +1,6 @@
 /* General Reset */
+/* The universal selector (*) resets margin, padding, and sets box-sizing to border-box for all elements. 
+   This ensures consistency across different browsers. */
 * {
     margin: 0;
     padding: 0;
@@ -6,133 +8,150 @@
 }
 
 /* Body Styling */
+/* Applies general styles for the entire page body, including font family, background color, 
+   text color, and line height to ensure readability. */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial, sans-serif; /* Uses Arial font, with sans-serif as a fallback */
+    background-color: #f9f9f9;     /* Light gray background color */
+    color: #333;                   /* Dark gray text color */
+    line-height: 1.6;              /* Adds spacing between lines for better readability */
 }
 
 /* Header Styling */
+/* Styles the header section at the top of the page. */
 header {
-    background-color: #4e5d6c;
-    padding: 40px 0;
-    text-align: center;
-    color: white;
+    background-color: #4e5d6c;  /* Dark gray-blue background for the header */
+    padding: 40px 0;            /* Adds 40px padding on the top and bottom */
+    text-align: center;         /* Centers the header content */
+    color: white;               /* White text color for contrast against the dark background */
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 3rem;            /* Large font size for the main header (h1) */
+    margin-bottom: 10px;        /* Adds space below the h1 element */
 }
 
 header h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;          /* Medium font size for the sub-header (h2) */
+    margin-bottom: 20px;        /* Adds more space below the h2 element */
 }
 
+/* Buttons Section */
+/* Styles the buttons located under the header. */
 .buttons {
-    margin-top: 20px;
+    margin-top: 20px;           /* Adds space above the buttons */
 }
 
 .buttons a {
-    background-color: #ff7f50;
-    padding: 10px 20px;
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display: inline-block;
+    background-color: #ff7f50;  /* Coral background color for buttons */
+    padding: 10px 20px;         /* Adds padding inside the button for better clickability */
+    margin: 0 10px;             /* Adds horizontal space between the buttons */
+    color: white;               /* White text color inside the button */
+    text-decoration: none;      /* Removes underline from links */
+    font-size: 1.2rem;          /* Slightly larger font for better readability */
+    border-radius: 5px;         /* Rounds the button corners slightly */
+    transition: background-color 0.3s ease; /* Adds a smooth color transition on hover */
+    display: inline-block;      /* Ensures the link behaves like a block for proper sizing */
 }
 
 .buttons a:hover {
-    background-color: #ff5722;
+    background-color: #ff5722;  /* Changes background to a darker orange when hovered */
 }
 
 /* Profile Section */
+/* Styles the profile section containing the image and the details. */
 .profile-section {
-    display: flex;
-    align-items: flex-start;
-    padding: 40px 10%;
-    background-color: #f5f5f5;
-    gap: 30px; /* Adds space between image and text */
+    display: flex;              /* Uses flexbox to align the profile image and details side by side */
+    align-items: flex-start;    /* Aligns the items (image and text) at the top */
+    padding: 40px 10%;          /* Adds padding inside the section, with 10% padding on the left/right */
+    background-color: #f5f5f5;  /* Light gray background for the profile section */
+    gap: 30px;                  /* Adds space between the image and the text content */
 }
 
+/* Profile Image Styling */
 .profile-image img {
-    width: 150px; /* Similar size as in the example */
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 150px;               /* Sets the width of the profile image */
+    height: 150px;              /* Sets the height of the profile image */
+    border-radius: 50%;         /* Makes the image circular by rounding it */
+    object-fit: cover;          /* Ensures the image fills the container while keeping its aspect ratio */
 }
 
+/* Profile Details Styling */
+/* Styles the text details next to the profile image. */
 .profile-details {
-    max-width: 600px;
-    font-size: 1.2rem;
-    color: #333;
+    max-width: 600px;           /* Limits the width of the text block to 600px */
+    font-size: 1.2rem;          /* Slightly larger font size for better readability */
+    color: #333;                /* Dark gray text color for contrast */
 }
 
 .profile-details h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2rem;            /* Larger font size for the name/title in the profile section */
+    margin-bottom: 10px;        /* Adds space below the name/title */
 }
 
 .profile-details p {
-    margin-bottom: 20px;
-    line-height: 1.8;
+    margin-bottom: 20px;        /* Adds space between paragraphs */
+    line-height: 1.8;           /* Increases line spacing for better readability */
 }
 
 .profile-details h3 {
-    margin-top: 30px;
-    font-size: 1.5rem;
+    margin-top: 30px;           /* Adds space above section headers like 'Interests' */
+    font-size: 1.5rem;          /* Medium font size for subheadings */
 }
 
+/* List Styling for Interests */
+/* Styles the list of interests under the profile details. */
 .profile-details ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none;      /* Removes default bullet points from the list */
+    padding: 0;                 /* Removes default padding from the list */
 }
 
 .profile-details ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px;        /* Adds space between list items */
 }
 
+/* Projects Preview Section */
+/* Styles the section where highlighted projects are displayed. */
 .projects-preview {
-    display: flex;
-    gap: 20px;
+    display: flex;              /* Flexbox layout for displaying projects side by side */
+    gap: 20px;                  /* Adds space between individual projects */
 }
 
+/* Project Image Styling */
+/* Styles the image and text inside the project section. */
 .project img {
-    width: 120px; /* Adjusted for smaller project images */
-    height: 120px;
-    border-radius: 10px;
+    width: 120px;               /* Sets width of the project images */
+    height: 120px;              /* Sets height of the project images */
+    border-radius: 10px;        /* Slightly rounds the corners of the images */
 }
 
 .project p {
-    margin-top: 10px;
-    font-size: 1rem;
-    text-align: center;
+    margin-top: 10px;           /* Adds space above the project text */
+    font-size: 1rem;            /* Sets smaller font size for project descriptions */
+    text-align: center;         /* Centers the project description text */
 }
 
 /* Footer Section */
+/* Styles the footer at the bottom of the page. */
 footer {
-    background-color: #4e5d6c;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #4e5d6c;  /* Dark gray-blue background color for the footer */
+    color: white;               /* White text color for contrast */
+    padding: 20px;              /* Adds padding inside the footer */
+    text-align: center;         /* Centers the content inside the footer */
 }
 
+/* Footer Social Links Styling */
 footer .social-links {
-    margin-top: 10px;
+    margin-top: 10px;           /* Adds space above the social media links */
 }
 
 footer .social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.1rem;
+    color: white;               /* White text color for social media icons/links */
+    text-decoration: none;      /* Removes underline from links */
+    margin: 0 10px;             /* Adds space between social media links */
+    font-size: 1.1rem;          /* Sets font size for the social media links */
 }
 
 footer .social-links a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underlines the link when hovered for better visual feedback */
 }
