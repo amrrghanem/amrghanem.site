@@ -61,8 +61,8 @@ header h2 {
 }
 
 .profile-image img {
-    width: 300px; /* Similar size as in the example */
-    height: 300px;
+    width: 150px; /* Similar size as in the example */
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
