@@ -12,9 +12,9 @@
    text color, and line height to ensure readability. */
 body {
     font-family: Arial, sans-serif; /* Uses Arial font, with sans-serif as a fallback */
-    background-color: #f9f9f9;     /* Light gray background color */
-    color: #333;                   /* Dark gray text color */
-    line-height: 1.6;              /* Adds spacing between lines for better readability */
+    background-color: white; /* Sets the background color to white */
+    color: black; /* Sets the text color to black */
+    line-height: 1.6; /* Adds spacing between lines for better readability */
 }
 
 /* Header Styling */
