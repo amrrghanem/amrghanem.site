@@ -7,38 +7,73 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
-    <!-- Full-Screen Hero Section -->
-    <header class="hero-section">
+    <header class="main-header">
+        <div class="header-content">
+            <img src="assets/your_image.png" alt="Dr. Amr Ghanem" class="profile-image">
+            <h1>Dr. Amr Ghanem</h1>
+            <p>Advanced Structural Designer & Researcher</p>
+        </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <div class="hero-content">
-            <div class="intro-text">
-                <h1 id="typewriter"></h1>
-                <p>Dr. Amr Ghanem, Ph.D</p>
-                <a href="#contact" class="btn">Contact Me!</a>
-            </div>
-        </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="content-container" id="home">
-        <!-- About Me Section -->
-        <section class="about" id="about">
-            <h2>About Me</h2>
-            <p>I am Dr. Amr Ghanem, an advanced structural designer and researcher specializing in multi-hazard resilience assessments, seismic analysis, and AI-driven structural health monitoring.</p>
+    <main class="content-container">
+        <!-- Professional Summary Section -->
+        <section class="professional-summary">
+            <p>Dr. Amr Ghanem is a recognized expert in multi-hazard resilience assessments, seismic analysis, and AI-driven structural health monitoring. With over 10 years of experience, Amr has contributed to groundbreaking research and innovative solutions for the built environment.</p>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
+        <!-- About Me Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am Dr. Amr Ghanem, an advanced structural designer and researcher specializing in multi-hazard resilience assessments, seismic analysis, and AI-driven structural health monitoring. I have a Ph.D. in Civil Engineering with a focus on structural engineering and have worked on innovative projects addressing the resilience of infrastructures under extreme conditions.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skill">
+                <h3>Structural Engineering</h3>
+                <div class="progress-bar"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill">
+                <h3>Seismic Analysis</h3>
+                <div class="progress-bar"><span style="width: 85%;"></span></div>
+            </div>
+            <div class="skill">
+                <h3>AI & Machine Learning</h3>
+                <div class="progress-bar"><span style="width: 75%;"></span></div>
+            </div>
+            <div class="skill">
+                <h3>BIM (Building Information Modeling)</h3>
+                <div class="progress-bar"><span style="width: 80%;"></span></div>
+            </div>
+        </section>
+
+        <!-- Research Interests Section -->
+        <section class="research-interests">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Multi-hazard assessment and risk mitigation</li>
+                <li>Structural performance under extreme loading</li>
+                <li>Smart sensors for structural health monitoring</li>
+                <li>Innovative materials in construction</li>
+                <li>Building Information Modeling (BIM) integration</li>
+                <li>AI and deep learning techniques in structural analysis</li>
+            </ul>
+        </section>
+
+        <!-- Highlighted Projects Section -->
+        <section class="projects">
             <h2>Highlighted Projects</h2>
             <div class="project-card">
                 <h3>Seismic Fragility Analysis of Bridges</h3>
@@ -50,51 +85,55 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:aghanem@martinchockcarden.com"><i class="fas fa-envelope"></i> aghanem@martinchockcarden.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/amrghanem"><i class="fab fa-linkedin"></i> linkedin.com/in/amrghanem</a></p>
+        <!-- Awards & Certifications Section -->
+        <section class="awards-certifications">
+            <h2>Awards & Certifications</h2>
+            <ul>
+                <li><strong>2023 Best Researcher Award</strong> - International Conference on Structural Engineering</li>
+                <li><strong>Certified Professional Engineer (PE)</strong></li>
+                <li><strong>Certified in Seismic Vulnerability Assessment</strong></li>
+                <li><strong>AI in Engineering Certificate</strong> - Stanford University, 2022</li>
+            </ul>
+        </section>
+
+        <!-- Featured Publications Section -->
+        <section class="featured-publications">
+            <h2>Featured Publications</h2>
+            <ul>
+                <li><strong>Seismic Vulnerability of Reinforced Concrete Structures</strong>, Journal of Structural Engineering, 2024. <a href="#">Read more</a></li>
+                <li><strong>Green Lightweight Concrete: A Sustainable Approach</strong>, Construction and Building Materials, 2023. <a href="#">Read more</a></li>
+                <li><strong>AI-Powered Structural Health Monitoring</strong>, Journal of AI in Engineering, 2022. <a href="#">Read more</a></li>
+            </ul>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What People Say</h2>
+            <div class="testimonial">
+                <p>"Dr. Amr Ghanem's expertise in structural engineering is unparalleled. His work on seismic vulnerability has greatly impacted our projects."</p>
+                <p><strong>- John Smith, Director of Engineering at XYZ Corp.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Amr's ability to integrate AI into structural health monitoring is revolutionary. His contributions have been invaluable."</p>
+                <p><strong>- Jane Doe, Head of AI Research at ABC Technologies</strong></p>
+            </div>
+        </section>
+
+        <!-- CV Download Section -->
+        <section class="cv-download">
+            <h2>Download My CV</h2>
+            <a href="downloads/AmrGhanem_CV.pdf" class="btn" download>Download CV</a>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Dr. Amr Ghanem</p>
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:aghanem@martinchockcarden.com"><i class="fas fa-envelope"></i> aghanem@martinchockcarden.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/amrghanem"><i class="fab fa-linkedin"></i> linkedin.com/in/amrghanem</a></p>
+            <p>ResearchGate: <a href="https://www.researchgate.net/profile/amrghanem"><i class="fas fa-graduation-cap"></i> ResearchGate Profile</a></p>
+        </section>
     </footer>
-
-    <!-- Typewriter Effect JavaScript -->
-    <script>
-        const words = ["Multi-Hazard Resilience", "Seismic Analysis", "AI in Engineering"];
-        let i = 0;
-        let j = 0;
-        let currentWord = "";
-        let isDeleting = false;
-        const typewriterElement = document.getElementById("typewriter");
-
-        function type() {
-            if (isDeleting && j === 0) {
-                i = (i + 1) % words.length;
-                isDeleting = false;
-            }
-
-            currentWord = words[i].slice(0, j);
-
-            typewriterElement.textContent = currentWord + "|";
-
-            if (!isDeleting) {
-                j++;
-                if (j === words[i].length) {
-                    setTimeout(() => isDeleting = true, 2000);
-                }
-            } else {
-                j--;
-            }
-
-            setTimeout(type, isDeleting ? 100 : 200);
-        }
-
-        document.addEventListener("DOMContentLoaded", type);
-    </script>
 </body>
 </html>
