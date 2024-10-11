@@ -8,65 +8,137 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    background-color: #f5f5f5;
+    color: #333;
     line-height: 1.6;
 }
 
 /* Header Styling */
-/* Styles the header section with the name aligned left and navigation right */
 header {
-    background-color: #5a5a5a; /* Dark gray background for the header */
-    padding: 20px 10%;         /* Adds padding inside the header */
-    display: flex;             /* Flexbox layout for aligning the content */
-    justify-content: space-between; /* Spaces name to the left, nav to the right */
-    align-items: center;       /* Centers the content vertically */
-    color: white;
+    background-color: #5a5a5a;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Name or Title in the Header */
 header h1 {
-    font-size: 1.5rem;         /* Font size for the name/title */
-    font-weight: bold;         /* Bold style for the name/title */
-    text-transform: uppercase; /* Makes the name uppercase */
-    margin: 0;                 /* Removes any margin */
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
 }
 
-/* Navigation Menu Styling */
 nav ul {
-    list-style: none;          /* Removes default list styling */
-    margin: 0;
-    padding: 0;
-    display: flex;             /* Flexbox for horizontal menu layout */
-    gap: 30px;                 /* Adds spacing between navigation items */
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
 nav ul li {
-    display: inline;           /* Makes list items inline */
+    display: inline;
 }
 
 nav ul li a {
-    text-decoration: none;     /* Removes underlining on the links */
-    color: white;              /* White color for the links */
-    font-size: 1rem;           /* Medium font size */
-    text-transform: uppercase; /* Uppercase text for navigation links */
-    letter-spacing: 0.1rem;    /* Slight letter spacing for links */
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
-/* Active Navigation Link */
-nav ul li a.active {
-    color: #90ee90;            /* Light green color for the active link */
+nav ul li a.active, nav ul li a:hover {
+    color: #90ee90;
 }
 
-/* Hover Effect for Navigation Links */
-nav ul li a:hover {
-    color: #90ee90;            /* Changes the link color to light green on hover */
+/* Profile Section Styling */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: white;
+    margin-top: 20px;
 }
 
-/* Footer Section */
-footer {
-    background-color: #4e5d6c; /* Dark gray background color for the footer */
-    color: white;              /* White text color */
-    padding: 20px;
-    text-align: center;        /* Centers content in the footer */
+.profile-left {
+    max-width: 300px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.sub-title, .on-leave {
+    font-size: 1rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+/* Profile Right - Content Styling */
+.profile-right {
+    max-width: 600px;
+}
+
+/* Interests and Education Section */
+.details-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.interests, .education {
+    width: 45%;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
 }
