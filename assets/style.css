@@ -11,30 +11,63 @@
 /* Applies general styles for the entire page body, including font family, background color, 
    text color, and line height to ensure readability. */
 body {
-    font-family: Arial, sans-serif; /* Uses Arial font, with sans-serif as a fallback */
-    background-color: white; /* Sets the background color to white */
-    color: black; /* Sets the text color to black */
-    line-height: 1.6; /* Adds spacing between lines for better readability */
+    font-family: Arial, sans-serif;    /* Uses Arial font, with sans-serif as a fallback */
+    background-color: white;           /* Sets the background color to white */
+    color: black;                      /* Sets the text color to black */
+    line-height: 1.6;                  /* Adds spacing between lines for better readability */
 }
 
 /* Header Styling */
-/* Styles the header section at the top of the page. */
+/* Styles the header section at the top of the page with a dark gray background, white text, 
+   and a layout that includes left-aligned title and right-aligned navigation links */
 header {
-    background-color: #4e5d6c;  /* Dark gray-blue background for the header */
-    padding: 40px 0;            /* Adds 40px padding on the top and bottom */
-    text-align: center;         /* Centers the header content */
+    background-color: #5a5a5a;  /* Dark gray background for the header */
+    padding: 20px 10%;          /* Adds 20px padding on the top and bottom, 10% padding left and right */
+    display: flex;              /* Flexbox layout for aligning content */
+    justify-content: space-between; /* Spaces out the content - name on the left, links on the right */
+    align-items: center;        /* Vertically aligns the content */
     color: white;               /* White text color for contrast against the dark background */
 }
 
+/* Name or Title in the Header */
 header h1 {
-    font-size: 3rem;            /* Large font size for the main header (h1) */
-    margin-bottom: 10px;        /* Adds space below the h1 element */
+    font-size: 1.5rem;          /* Medium font size for the name */
+    font-weight: bold;          /* Makes the name bold */
+    text-transform: uppercase;  /* Makes the name uppercase */
+    margin: 0;                  /* Removes margin */
 }
 
-header h2 {
-    font-size: 1.5rem;          /* Medium font size for the sub-header (h2) */
-    margin-bottom: 20px;        /* Adds more space below the h2 element */
+/* Navigation Menu Styling */
+nav ul {
+    list-style: none;           /* Removes default list bullets */
+    margin: 0;                  /* Removes margin */
+    padding: 0;                 /* Removes padding */
+    display: flex;              /* Displays the list items inline */
+    gap: 30px;                  /* Adds space between the navigation links */
 }
+
+nav ul li {
+    display: inline;            /* Ensures each list item is inline */
+}
+
+nav ul li a {
+    text-decoration: none;      /* Removes underline from the links */
+    color: white;               /* White color for the navigation links */
+    font-size: 1rem;            /* Medium font size */
+    text-transform: uppercase;  /* Makes the links uppercase */
+    letter-spacing: 0.1rem;     /* Adds slight spacing between the letters */
+}
+
+/* Active Navigation Link */
+nav ul li a.active {
+    color: #90ee90;             /* Light green color for the active link (similar to "HOME" in your example) */
+}
+
+/* Hover Effect for Navigation Links */
+nav ul li a:hover {
+    color: #90ee90;             /* Changes link color to light green on hover */
+}
+
 
 /* Buttons Section */
 /* Styles the buttons located under the header. */
