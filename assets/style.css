@@ -1,161 +1,120 @@
-/* General Styling */
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Main Header */
-.main-header {
-    background: linear-gradient(135deg, #0053a0 0%, #003d7a 100%);
-    color: white;
-    padding: 40px 0;
+.container {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.main-header .header-content {
+header {
+    background-color: #1a2a6c;
+    padding: 50px 0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+.buttons a {
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #ff5722;
+}
+
+section.projects-preview {
+    margin: 50px 0;
+}
+
+section.projects-preview h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    width: 45%;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.profile-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
     margin-bottom: 15px;
-}
-
-/* Navbar */
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.navbar ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.navbar ul li a:hover {
-    background-color: #003d7a;
-}
-
-/* Content Container */
-.content-container {
-    width: 80%;
-    max-width: 1000px;
-    margin: 40px auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #0053a0;
-    border-bottom: 2px solid #0053a0;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-/* Project Cards */
-.project-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* CV Download Button */
-.cv-download a {
-    display: inline-block;
-    background-color: #0053a0;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-weight: bold;
+.contact-form button {
+    padding: 10px;
+    background-color: #1a2a6c;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
-.cv-download a:hover {
-    background-color: #003d7a;
+.contact-form button:hover {
+    background-color: #ff7f50;
 }
-
-/* Skills Section */
-.skills {
-    margin-bottom: 40px;
-}
-
-.skill {
-    margin-bottom: 20px;
-}
-
-.progress-bar {
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 20px;
-}
-
-.progress-bar span {
-    display: block;
-    height: 100%;
-    background-color: #0053a0;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: #003d7a;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer a {
-    color: #a8e0ff;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #e0f7ff;
-}
-
-/* Testimonials */
-.testimonial {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.testimonial p {
-    margin: 0;
-   
